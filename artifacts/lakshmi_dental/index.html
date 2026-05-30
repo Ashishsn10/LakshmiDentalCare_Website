@@ -279,9 +279,23 @@
 
       .nav-brand {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        gap: 12px;
         line-height: 1.1;
       }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav-logo {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
       .nav-brand .brand-top {
         font-family: "Playfair Display", serif;
         font-size: 28px;
@@ -1345,13 +1359,17 @@
       <div class="container">
         <div class="nav-inner">
           <a
-            href="#hero"
-            class="nav-brand"
-            aria-label="Lakshmi Dental Care Home"
-          >
+          href="#hero"
+          class="nav-brand"
+          aria-label="Lakshmi Dental Care Home"
+        >
+          <img src="/Users/ashishsn/Desktop/Dr. Arvind Websites/Lakshmi_Dental_Care_Sample/artifacts/lakshmi_dental/public/logo1.png" alt="Lakshmi Dental Care Logo" class="nav-logo">
+
+          <div class="brand-text">
             <span class="brand-top">Lakshmi</span>
             <span class="brand-sub">Dental Care</span>
-          </a>
+          </div>
+        </a>
 
           <ul class="nav-links">
             <li><a href="#doctor">About</a></li>
@@ -1406,12 +1424,12 @@
               From routine checkups to advanced restorative and cosmetic dentistry.
             </p>
 
-            <div class="hero-badges">
+            <!-- <div class="hero-badges">
               <span class="badge badge-teal">Dental Surgeon</span>
               <span class="badge badge-teal">Root Canal Treatment</span>
               <span class="badge badge-teal">Cosmetic Dentistry</span>
               <span class="badge badge-teal">Patient-Focused Care</span>
-            </div>
+            </div> -->
 
             <div class="hero-ctas">
               <a href="tel:+919999999999" class="btn btn-primary"
@@ -1457,13 +1475,13 @@
           <!-- Right: Bio -->
           <div>
             <span class="section-label">Meet Your Doctor</span>
-            <h2 class="section-heading doctor-name">Meet Dr. Arvind P V</h2>
+            <h2 class="section-heading doctor-name">Dr. Arvind P V</h2>
 
             <div class="badges-row">
-              <span class="badge badge-teal">Dental Surgeon</span>
-              <span class="badge badge-teal">General Dentistry</span>
-              <span class="badge badge-teal">Cosmetic Dentistry</span>
-              <span class="badge badge-teal">Experienced Dental Care</span>
+              <span class="badge badge-teal">🎓 BDS</span>
+              <span class="badge badge-teal">🇮🇳 Former Squadron Leader, Indian Air Force</span>
+              <span class="badge badge-teal">30+ Years of Experience</span>
+              <span class="badge badge-teal">200+ patients treated</span>
             </div>
 
             <p class="doctor-bio">
@@ -1485,7 +1503,7 @@
       <div class="container">
         <div class="services-intro">
           <span class="section-label">What We Offer</span>
-          <h2 class="section-heading">Services Offered</h2>
+          <h2 class="section-heading">Our Services</h2>
           <p class="section-sub">
             Comprehensive dental treatments with a patient-first approach.
             From routine checkups to advanced restorative and cosmetic dentistry.
